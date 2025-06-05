@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>A.R.I.A Admin Panel</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <div class="admin-login" id="login-container">
+    <h2>Admin Login</h2>
+    <input type="password" id="admin-password" placeholder="Enter admin password" />
+    <button onclick="login()">Login</button>
+    <p id="login-status"></p>
+  </div>
+
+  <div class="admin-panel hidden" id="admin-panel">
+    <h1>🔧 A.R.I.A Admin Panel</h1>
+    <button onclick="triggerScan()">🔁 Trigger Watchtower Scan</button>
+    <button onclick="viewArticles()">📄 View Review Articles</button>
+    <button onclick="purgeMock()">🗑️ Purge Mock Data</button>
+    <button onclick="injectMemory()">🧠 Inject Anubis Memory</button>
+    <p id="admin-output"></p>
+  </div>
+
+  <script src="admin.js"></script>
+</body>
+</html>
